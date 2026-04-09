@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delícia Bolos: bolos e doces artesanais feitos sob encomenda com carinho, qualidade e atendimento personalizado.">
+  <title>Delícia Bolos</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a href="#conteudo" class="sr-only">Pular para o conteúdo principal</a>
+
+<header class="header">
+  <div class="container hero">
+    <div>
+      <div class="hero-badge">Encomendas com antecedência mínima de 1 dia</div>
+      <h1 class="hero-title">Delícia Bolos</h1>
+      <p class="hero-description">
+        Bolos e doces artesanais feitos sob encomenda para aniversários, festas,
+        cafés especiais e momentos inesquecíveis.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#pedido" class="btn-primary">Fazer pedido</a>
+        <a href="#contato" class="btn-secondary">Falar conosco</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel" aria-label="Informações importantes">
+      <h2>Informações importantes</h2>
+      <ul>
+        <li>Pedidos com no mínimo 1 dia de antecedência.</li>
+        <li>Horário disponível para pedidos e retirada entre 07:00 e 20:00.</li>
+        <li>Pagamento à vista ou 50% de sinal + 50% no recebimento.</li>
+        <li>Brigadeiros com pedido mínimo de 50 unidades.</li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Navegação principal">
+  <div class="nav-inner">
+    <a href="#" class="brand-mini">Delícia Bolos</a>
+
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#pedido">Pedido</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </div>
+</nav>
+
+<main id="conteudo" class="container">
+  <section id="sobre" class="section-card" aria-labelledby="sobre-title">
+    <h2 id="sobre-title" class="section-title">Sobre a Delícia Bolos</h2>
+    <p class="section-subtitle">
+      Há mais de 10 anos no ramo da confeitaria, a Delícia Bolos transforma celebrações em experiências
+      cheias de sabor, delicadeza e qualidade. Cada encomenda é feita com atenção aos detalhes,
+      combinando beleza, textura e um sabor que fica na memória.
+    </p>
+
+    <div class="grid-3">
+      <article class="info-card">
+        <h3>Ingredientes selecionados</h3>
+        <p>
+          Receitas preparadas com cuidado, ingredientes de qualidade e acabamento pensado para impressionar.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h3>Atendimento personalizado</h3>
+        <p>
+          Cada pedido é acompanhado com atenção para garantir mais segurança, organização e satisfação.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h3>Retirada ou entrega</h3>
+        <p>
+          Escolha a melhor opção para você e informe o endereço caso deseje entrega.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="produtos" class="section-card" aria-labelledby="produtos-title">
+    <h2 id="produtos-title" class="section-title">Nossos Produtos</h2>
+    <p class="section-subtitle">
+      Escolha entre bolos gourmets, bolos simples e brigadeiros artesanais preparados com muito carinho.
+    </p>
+
+    <div class="catalog-grid">
+      <article class="catalog-card">
+        <div class="catalog-badge">Bolos Gourmets</div>
+        <h3>Sabores especiais por quilo</h3>
+        <p>
+          Opções mais elaboradas com combinações como Ninho com Nutella, Pistache,
+          Sensação, Floresta Negra e outras versões para ocasiões especiais.
+        </p>
+        <div class="catalog-highlight">A partir de R$ 55,00 por kg</div>
+      </article>
+
+      <article class="catalog-card">
+        <div class="catalog-badge">Bolos Simples</div>
+        <h3>Perfeitos para o dia a dia</h3>
+        <p>
+          Sabores clássicos como cenoura, milho, laranja, formigueiro, bolo de leite
+          e outras opções para café da tarde e encomendas rápidas.
+        </p>
+        <div class="catalog-highlight">A partir de R$ 25,00 por unidade</div>
+      </article>
+
+      <article class="catalog-card">
+        <div class="catalog-badge">Brigadeiros</div>
+        <h3>Caixinhas e festas</h3>
+        <p>
+          Monte seu pedido escolhendo a quantidade total e distribuindo entre sabores
+          variados como beijinho, churros, pistache, leite ninho e muito mais.
+        </p>
+        <div class="catalog-highlight">R$ 1,40 por unidade • mínimo de 50</div>
+      </article>
+    </div>
+  </section>
+
+  <form id="pedidoForm" novalidate>
+    <section id="pedido" class="section-card" aria-labelledby="pedido-title">
+      <h2 id="pedido-title" class="section-title">Monte seu pedido</h2>
+      <p class="section-subtitle">
+        Selecione os itens desejados, informe seus dados e envie sua encomenda de forma simples.
+      </p>
+
+      <div class="pedido-layout">
+        <div class="pedido-main">
+          <section class="bloco" aria-labelledby="gourmets-title">
+            <h3 id="gourmets-title">Bolos Gourmets</h3>
+            <p class="bloco-desc">
+              Escolha o sabor, a massa e a quantidade em quilos.
+            </p>
+
+            <div class="produtos-grid" id="bolosGourmetsGrid"></div>
+          </section>
+
+          <section class="bloco" aria-labelledby="simples-title">
+            <h3 id="simples-title">Bolos Simples</h3>
+            <p class="bloco-desc">
+              Sabores clássicos para o dia a dia, café da tarde e encomendas especiais.
+            </p>
+
+            <div class="produtos-grid" id="bolosSimplesGrid"></div>
+          </section>
+
+          <section class="bloco" aria-labelledby="brigadeiros-title">
+            <h3 id="brigadeiros-title">Brigadeiros</h3>
+            <p class="bloco-desc">
+              Informe a quantidade total e distribua os sabores conforme desejar.
+            </p>
+
+            <div class="brigadeiros-topo">
+              <div class="field">
+                <label for="brigadeiroQtd">Quantidade total de brigadeiros</label>
+                <input type="number" id="brigadeiroQtd" min="50" step="1" placeholder="Digite a quantidade total (mínimo 50)" aria-describedby="brigadeiroAjuda brigadeiroStatus">
+              </div>
+
+              <div id="brigadeiroAjuda" class="help-box">
+                Pedido mínimo de 50 unidades
+              </div>
+            </div>
+
+            <div class="brigadeiros-lista">
+              <label>Amendoim
+                <input type="number" class="brigadeiro-qtd" data-sabor="Amendoim" min="0" value="0" /></label>
+              <label>Beijinho
+                <input type="number" class="brigadeiro-qtd" data-sabor="Beijinho" min="0" value="0" /></label>
+              <label>Bicho de Pé
+                <input type="number" class="brigadeiro-qtd" data-sabor="Bicho de Pé" min="0" value="0" /></label>
+              <label>Brigadeiro
+                <input type="number" class="brigadeiro-qtd" data-sabor="Brigadeiro" min="0" value="0" /></label>
+              <label>Brigadeiro de Limão
+                <input type="number" class="brigadeiro-qtd" data-sabor="Brigadeiro de Limão" min="0" value="0"></label>
+              <label>Brigadeiro de Maracujá
+                <input type="number" class="brigadeiro-qtd" data-sabor="Brigadeiro de Maracujá" min="0" value="0"></label>
+              <label>Brigadeiro de Ovomaltine
+                <input type="number" class="brigadeiro-qtd" data-sabor="Brigadeiro de Ovomaltine" min="0" value="0"></label>
+              <label>Brigadeiro de Paçoca
+                <input type="number" class="brigadeiro-qtd" data-sabor="Brigadeiro de Paçoca" min="0" value="0"></label>
+              <label>Casadinho
+                <input type="number" class="brigadeiro-qtd" data-sabor="Casadinho" min="0" value="0"></label>
+              <label>Cajuzinho
+                <input type="number" class="brigadeiro-qtd" data-sabor="Cajuzinho" min="0" value="0"></label>
+              <label>Churros
+                <input type="number" class="brigadeiro-qtd" data-sabor="Churros" min="0" value="0"></label>
+              <label>Ferrero Rocher
+                <input type="number" class="brigadeiro-qtd" data-sabor="Ferrero Rocher" min="0" value="0"></label>
+              <label>Leite Ninho
+                <input type="number" class="brigadeiro-qtd" data-sabor="Leite Ninho" min="0" value="0"></label>
+              <label>Leite Ninho com Nutella
+                <input type="number" class="brigadeiro-qtd" data-sabor="Leite Ninho com Nutella" min="0" value="0"></label>
+              <label>M&M
+                <input type="number" class="brigadeiro-qtd" data-sabor="M&M" min="0" value="0"></label>
+              <label>Pistache
+                <input type="number" class="brigadeiro-qtd" data-sabor="Pistache" min="0" value="0"></label>
+              <label>Sensação
+                <input type="number" class="brigadeiro-qtd" data-sabor="Sensação" min="0" value="0"></label>
+              <label>Surpresa de Uva
+                <input type="number" class="brigadeiro-qtd" data-sabor="Surpresa de Uva" min="0" value="0"></label>
+              <label>Romeu e Julieta
+                <input type="number" class="brigadeiro-qtd" data-sabor="Romeu e Julieta" min="0" value="0"></label>
+              <label>Napolitano
+                <input type="number" class="brigadeiro-qtd" data-sabor="Napolitano" min="0" value="0"></label>
+              <label>Coco Queimado
+                <input type="number" class="brigadeiro-qtd" data-sabor="Coco Queimado" min="0" value="0"></label>
+              <label>Brigadeiro com Morango
+                <input type="number" class="brigadeiro-qtd" data-sabor="Brigadeiro com Morango" min="0" value="0"></label>
+              <label>Chocolate Meio Amargo
+                <input type="number" class="brigadeiro-qtd" data-sabor="Chocolate Meio Amargo" min="0" value="0"></label>
+              <label>Casadinho Sensação
+                <input type="number" class="brigadeiro-qtd" data-sabor="Casadinho Sensação" min="0" value="0"></label>
+            </div>
+
+            <div id="brigadeiroStatus" class="status-box status-neutral" aria-live="polite">
+              Informe a quantidade total para começar a distribuir os sabores.
+            </div>
+          </section>
+
+          <section id="depoimentos" class="section-card" aria-labelledby="depoimentos-title">
+          <h2 id="depoimentos-title" class="section-title">Depoimentos</h2>
+
+            <div class="testimonials-grid">
+              <article class="testimonial-card">
+                <p>
+                  “O bolo ficou simplesmente maravilhoso, muito bonito e extremamente saboroso.
+                  Todo mundo elogiou na festa!”
+                </p>
+                <strong>Mariana Souza</strong>
+              </article>
+
+              <article class="testimonial-card">
+                <p>
+                  “Os brigadeiros vieram impecáveis, super bem feitos e deliciosos.
+                  Atendimento muito atencioso do começo ao fim.”
+                </p>
+                <strong>Fernanda Lima</strong>
+              </article>
+
+              <article class="testimonial-card">
+                <p>
+                  “Já pedi mais de uma vez e sempre vem tudo perfeito.
+                  Dá para sentir o carinho em cada detalhe.”
+                </p>
+                <strong>Juliana Martins</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="bloco" aria-labelledby="dados-title">
+            <h3 id="dados-title">Dados do Pedido</h3>
+            <p class="bloco-desc">
+              Preencha seus dados para concluir o envio da encomenda.
+            </p>
+
+            <div class="form-grid">
+              <div class="field full">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required autocomplete="name">
+              </div>
+
+              <div class="field full">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required autocomplete="email">
+              </div>
+
+              <fieldset class="radio-group full" aria-describedby="recebimentoAjuda">
+                <legend class="fieldset-title">Forma de recebimento</legend>
+
+                <div class="inline-options">
+                  <label>
+                    <input type="radio" name="recebimento" value="Retirada" checked>Retirada
+                  </label>
+
+                  <label>
+                    <input type="radio" name="recebimento" value="Entrega">Entrega
+                  </label>
+                </div>
+
+                <div id="recebimentoAjuda" class="status-box status-neutral mt-5">
+                  Se escolher entrega, informe o endereço completo.
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="Digite o CEP" maxlength="9" autocomplete="postal-code">
+              </div>
+
+              <div class="field full">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Rua, avenida, etc." autocomplete="street-address">
+              </div>
+
+              <div class="field">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" placeholder="Número" autocomplete="address-line2">
+              </div>
+
+              <div class="field">
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" placeholder="Apto, bloco, referência..." autocomplete="address-line2">
+              </div>
+
+              <div class="field">
+                <label for="dataPedido">Data</label>
+                <input type="date" id="dataPedido" required>
+              </div>
+
+              <div class="field">
+                <label for="horaPedido">Horário</label>
+                <input type="time" id="horaPedido" required min="07:00" max="20:00" value="07:00">
+              </div>
+
+              <div class="field full">
+                <label for="observacoes">Observações do pedido</label>
+                <textarea id="observacoes" placeholder="Ex.: escrever nome no bolo, preferência de decoração, detalhes do pedido, etc."></textarea>
+              </div>
+            </div>
+
+            <fieldset class="radio-group" aria-describedby="textoCondicaoPagamento">
+              <legend class="fieldset-title">Condição de pagamento</legend>
+
+              <div class="inline-options">
+                <label>
+                  <input type="radio" name="condicaoPagamento" value="avista" checked>À vista</label>
+                <label>
+                  <input type="radio" name="condicaoPagamento" value="sinal">50% de sinal + 50% no recebimento</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="radio-group" aria-describedby="pagamentoErro">
+              <legend class="fieldset-title">Forma de pagamento</legend>
+
+              <div class="inline-options">
+                <label>
+                  <input type="radio" name="pagamento" value="Cartão de crédito">Cartão de crédito</label>
+                <label>
+                  <input type="radio" name="pagamento" value="Cartão de débito">Cartão de débito</label>
+                <label>
+                  <input type="radio" name="pagamento" value="Pix">Pix</label>
+              </div>
+
+              <div id="textoCondicaoPagamento" class="status-box status-neutral mt-5">
+                Pagamento à vista no momento do pedido.
+              </div>
+
+              <div id="pagamentoErro" class="form-message status-danger hidden" aria-live="polite">
+                Selecione a forma de pagamento.
+              </div>
+            </fieldset>
+
+            <div id="formMensagem" class="form-message hidden" aria-live="polite"></div>
+          </section>
+        </div>
+
+        <aside class="pedido-sidebar" aria-label="Resumo do pedido">
+          <div class="sidebar-card">
+            <h3>Resumo do pedido</h3>
+            <p class="sidebar-text">
+              O valor total é atualizado automaticamente conforme você escolhe os itens.
+            </p>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="sidebar-text" id="resumoRecebimentoTexto">
+              Retirada ou entrega • Pedidos com antecedência mínima de 1 dia • Horário entre 07:00 e 20:00
+            </div>
+
+            <div class="total-box">
+              <strong>Total: R$ <span id="total">0,00</span></strong>
+
+              <div class="total-secundario" id="linhaEntrada">
+                Pagar agora: R$ <span id="sinal">0,00</span>
+              </div>
+
+              <div class="total-secundario hidden" id="linhaRestante">
+                Restante no recebimento: R$ <span id="restante">0,00</span>
+              </div>
+            </div>
+
+            <div id="resumoVisual" class="resumo-visual">
+              <div class="resumo-vazio">
+                Seu pedido ainda está vazio.<br>
+                Escolha bolos ou brigadeiros para ver o resumo aqui.
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <button type="submit" class="button-primary" disabled>
+                Enviar Pedido
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </form>
+
+  <section id="faq" class="section-card" aria-labelledby="faq-title">
+    <h2 id="faq-title" class="section-title">Dúvidas Frequentes</h2>
+    <p class="section-subtitle">
+      Algumas informações importantes antes de finalizar sua encomenda.
+    </p>
+
+    <div class="faq-grid">
+      <article class="faq-card">
+        <h3>Qual a antecedência mínima?</h3>
+        <p>
+          Os pedidos devem ser feitos com pelo menos 1 dia de antecedência para garantir organização e qualidade.
+        </p>
+      </article>
+
+      <article class="faq-card">
+        <h3>Como funciona o pagamento?</h3>
+        <p>
+          Você pode pagar à vista no momento do pedido ou escolher a opção com 50% de sinal e 50% no recebimento.
+        </p>
+      </article>
+
+      <article class="faq-card">
+        <h3>Posso escolher entrega?</h3>
+        <p>
+          Sim. Você pode escolher retirada ou entrega e informar seu endereço completo no formulário.
+        </p>
+      </article>
+
+      <article class="faq-card">
+        <h3>Brigadeiros têm mínimo?</h3>
+        <p>
+          Sim. O pedido mínimo é de 50 unidades, e a distribuição entre sabores precisa somar exatamente a quantidade informada.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contato" class="section-card" aria-labelledby="contato-title">
+    <h2 id="contato-title" class="section-title">Contato e Localização</h2>
+    <p class="section-subtitle">
+      Entre em contato para dúvidas, encomendas e retirada no local.
+    </p>
+
+    <div class="contato-grid">
+      <article class="contato-card">
+        <h3>Instagram</h3>
+        <p>
+          Acompanhe novidades, promoções e inspirações da Delícia Bolos.
+        </p>
+        <a href="https://www.instagram.com/deliciasbolosbr?igsh=YTR1eHE2MDJzOHJy&utm_source=qr" target="_blank" rel="noopener noreferrer">
+          Acessar Instagram
+        </a>
+      </article>
+        <article class="contato-card">
+        <h3>Endereço</h3>
+        <p>
+          R. Atlântica - Jardim do Mar,<br>
+          São Bernardo do Campo - SP,<br>
+          09750-480
+        </p>
+        <a href="https://www.google.com/maps?q=R.%20Atl%C3%A2ntica%20-%20Jardim%20do%20Mar,%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP,%2009750-480" target="_blank" rel="noopener noreferrer">
+          Abrir no mapa
+        </a>
+      </article>
+    </div>
+
+    <div class="mapa-card">
+      <h3>Como chegar</h3>
+      <p>
+        Veja nossa localização no mapa para facilitar sua retirada.
+      </p>
+
+      <div class="mapa-embed">
+        <iframe
+          src="https://www.google.com/maps?q=R.%20Atl%C3%A2ntica%20-%20Jardim%20do%20Mar,%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP,%2009750-480&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Mapa da Delícia Bolos"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <p>©️ 2026 Delícia Bolos — Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script> 
+</body>
+</html>
